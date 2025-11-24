@@ -1,120 +1,260 @@
 <!DOCTYPE html>
-<html>
-<title>XIAOYI DU</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
-<style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-.w3-sidebar {width: 120px;background: #222;}
-#main {margin-left: 120px}
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
-
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <img src="headshot_Xiaoyi Du.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>HOME</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ABOUT</p>
-  </a>
-  <a href="#comedy" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-smile-o w3-xxlarge"></i>
-    <p>COMEDY</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>PHOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACT</p>
-  </a>
-</nav>
-
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:20% !important">ABOUT</a>
-    <a href="#comedy" class="w3-bar-item w3-button" style="width:20% !important">COMEDY</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:20% !important">PHOTOS</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
-  </div>
-</div>
-
-<div class="w3-padding-large" id="main">
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm </span>XIAOYI DU</h1>
-    <p>Programmer and Fashion Model.</p>
-    <img src="headshot_Xiaoyi Du.jpg" class="w3-image" width="200px" height="480px" alt="Xiaoyi Du">
-  </header>
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">ABOUT ME</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>Student at University of Toronto, passionate about technology and modeling.</p>
-  </div>
-
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="comedy">
-    <h2 class="w3-text-light-grey">COMEDY</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>When I'm not coding or modeling, I love to make people laugh. I enjoy performing stand-up routines and sharing jokes with friends.</p>
-  </div>
-
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">My Photos</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%" alt="wedding photo">
-        <img src="/w3images/rocks.jpg" style="width:100%" alt="rocks photo">
-        <img src="/w3images/sailboat.jpg" style="width:100%" alt="sailboat photo">
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>xiaoyidu | Personal Site</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Personal site of xiaoyidu – writing, lifestyle, comedy and more."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- 可选：Google Fonts，引不引都行，没网也会 fallback -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
+    <!-- Site Header -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#home" class="logo">
+            <span class="logo-mark" aria-hidden="true"></span>
+            <span class="logo-text">xiaoy1du</span>
+        </a>          
+        <nav class="nav">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#blog">Blog</a>
+          <a href="#lifestyle">Lifestyle</a>
+          <!-- 预留 Projects 导航，暂时注释
+          <a href="#projects">Projects</a>
+          -->
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-      <div class="w3-half">
-        <img src="/w3images/underwater.jpg" style="width:100%" alt="underwater photo">
-        <img src="/w3images/chef.jpg" style="width:100%" alt="chef photo">
-        <img src="/w3images/wedding.jpg" style="width:100%" alt="wedding photo">
-        <img src="/w3images/p6.jpg" style="width:100%" alt="p6 photo">
+    </header>
+
+    <main>
+      <!-- Hero / Home -->
+      <section id="home" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Hi, I'm</p>
+            <h1>Xiaoyi Du</h1>
+            <p class="hero-subtitle">
+              I write, create, explore, and share little pieces of life,
+              thoughts, and sometimes questionable jokes.
+            </p>
+            <div class="hero-actions">
+              <a href="#blog" class="btn btn-primary">Read the Blog</a>
+              <a href="#about" class="btn btn-secondary">About Me</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section section-about">
+        <div class="container two-column">
+          <div class="about-photo">
+            <div class="avatar-placeholder">
+              <span>xiaoyidu</span>
+            </div>
+          </div>
+          <div class="about-card">
+            <h2>About Me</h2>
+            <p>
+              This is a short introduction about who I am, what I'm curious
+              about, and how I spend my days balancing work, ideas, and
+              low-key chaos.
+            </p>
+            <p>
+              I enjoy exploring AI, agents, writing, and standup topics. This
+              site is a place to collect experiments, notes, and things that
+              make me laugh enough to write them down.
+            </p>
+            <p>
+              Right now I'm also working on agent projects for job hunting, so
+              this space will slowly turn into both a life log and a soft
+              portfolio.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog -->
+      <section id="blog" class="section section-blog">
+        <div class="container">
+          <div class="section-header">
+            <h2>Blog</h2>
+            <p class="section-description">
+              Occasional long-form thoughts, small essays, or notes that
+              deserve more than a tweet.
+            </p>
+          </div>
+          <div class="blog-list">
+            <article class="card blog-card">
+              <h3 class="card-title">[Placeholder] First post title</h3>
+              <p class="card-meta">2025 · Draft</p>
+              <p class="card-body">
+                This is where a short summary of the post goes. You can write
+                about learning, work, life, or anything that feels meaningful.
+              </p>
+              <a href="#" class="card-link">Read &rarr;</a>
+            </article>
+            <article class="card blog-card">
+              <h3 class="card-title">[Placeholder] Another future piece</h3>
+              <p class="card-meta">2025 · Idea</p>
+              <p class="card-body">
+                You don't have to fill this right now. Having the layout here
+                just reminds you that the space is ready when you are.
+              </p>
+              <a href="#" class="card-link">Read &rarr;</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lifestyle (Comedy + Gallery) -->
+      <section id="lifestyle" class="section section-lifestyle">
+        <div class="container">
+          <div class="section-header">
+            <h2>Lifestyle</h2>
+            <p class="section-description">
+              A softer corner: small jokes, random observations, and snapshots.
+            </p>
+          </div>
+
+          <!-- Comedy sub-section -->
+          <div class="subsection">
+            <div class="subsection-header">
+              <h3>Comedy / Notes</h3>
+              <p class="subsection-description">
+                Tiny thoughts that made it past the internal editor.
+              </p>
+            </div>
+            <div class="comedy-list">
+              <article class="card comedy-card">
+                <p class="card-body">
+                  Sometimes “I'll do it later” actually means “future me can
+                  deal with this chaos.” Future me is filing a complaint.
+                </p>
+                <p class="card-meta">Placeholder · keep or replace anytime</p>
+              </article>
+              <article class="card comedy-card">
+                <p class="card-body">
+                  Productivity tip: open your laptop. Stare at it. Close it.
+                  Realize the problem was never the laptop.
+                </p>
+                <p class="card-meta">Draft joke · feel free to delete</p>
+              </article>
+            </div>
+          </div>
+
+          <!-- Gallery sub-section -->
+          <div class="subsection">
+            <div class="subsection-header">
+              <h3>Gallery</h3>
+              <p class="subsection-description">
+                Space for photos, screenshots, or anything visual you want to
+                remember.
+              </p>
+            </div>
+            <div class="gallery-grid">
+              <div class="gallery-item placeholder">
+                <span>Image placeholder</span>
+              </div>
+              <div class="gallery-item placeholder">
+                <span>Image placeholder</span>
+              </div>
+              <div class="gallery-item placeholder">
+                <span>Image placeholder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects (预留，整体注释掉，后面有内容再解开) -->
+      <!--
+      <section id="projects" class="section section-projects">
+        <div class="container">
+          <div class="section-header">
+            <h2>Projects</h2>
+            <p class="section-description">
+              This space is reserved for AI / agent experiments and other work
+              you want to show when it's ready.
+            </p>
+          </div>
+          <div class="project-grid">
+            <article class="card project-card">
+              <h3 class="card-title">Agent Project Placeholder</h3>
+              <p class="card-body">
+                Short description of what the agent does and why it exists.
+              </p>
+              <ul class="tag-list">
+                <li>LLM</li>
+                <li>Agent</li>
+                <li>Experiment</li>
+              </ul>
+              <div class="project-links">
+                <a href="#" class="card-link">GitHub &rarr;</a>
+                <a href="#" class="card-link">Demo &rarr;</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      -->
+
+      <!-- Contact -->
+      <section id="contact" class="section section-contact">
+        <div class="container">
+          <div class="section-header">
+            <h2>Contact</h2>
+            <p class="section-description">
+              If you ever want to say hi, collaborate, or send memes:
+            </p>
+          </div>
+          <div class="contact-content">
+            <ul class="contact-list">
+              <li>
+                Email:
+                <a href="mailto:you@example.com">you@example.com</a>
+              </li>
+              <li>
+                GitHub:
+                <a href="https://github.com/xiaoyid" target="_blank"
+                  >@xiaoyid</a
+                >
+              </li>
+              <!-- 如果你有 Instagram / LinkedIn 可以加在这里 -->
+              <!--
+              <li>
+                Instagram:
+                <a href="#" target="_blank">@your_ig</a>
+              </li>
+              -->
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <span class="footer-logo">xiaoyidu</span>
+        <span class="footer-meta">
+          © <span id="year"></span> xiaoyidu. All rights reserved.
+        </span>
       </div>
-    </div>
-  </div>
-
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contact Me</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Toronto, ON</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: <a href="mailto:dxythedreamer@gmail.com">dxythedreamer@gmail.com</a></p>
-    </div><br>
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  </div>
-
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
-</div>
-
-<script src="script.js"></script>
-</body>
+      <script>
+        document.getElementById("year").textContent =
+          new Date().getFullYear();
+      </script>
+    </footer>
+  </body>
 </html>
