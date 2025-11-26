@@ -282,8 +282,25 @@ img {
   display: flex;
   justify-content: center;
 }
+.about-avatar-card {
+  width: 220px;
+  height: 220px;
+  border-radius: var(--radius-lg);
+  background: #ffffff;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
-.avatar-placeholder {
+.about-avatar {
+  width: 90%;
+  height: auto;
+  display: block;
+}
+
+/* .avatar-placeholder {
   width: 220px;
   height: 220px;
   border-radius: var(--radius-lg);
@@ -295,7 +312,7 @@ img {
   font-weight: 600;
   font-size: 0.95rem;
   box-shadow: var(--shadow-soft);
-}
+} */
 
 .about-card {
   background: var(--bg-soft);
