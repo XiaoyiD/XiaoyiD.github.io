@@ -1,24 +1,26 @@
 /* Design tokens */
 :root {
-    --bg: #fdfcf9;
-    --bg-soft: #f6f2ec;
-    --bg-card: #ffffff;
-    --border-subtle: #e8e3db;
-    --text: #1a1a1a;
-    --text-muted: #6f6c66;
-    --accent: #a883ff;
-    --accent-soft: rgba(168, 131, 255, 0.12);
-    --accent-lifestyle: #ffb7c3;
-  
-    --radius-lg: 20px;
-    --radius-pill: 999px;
-  
-    --shadow-soft: 0 12px 32px rgba(0, 0, 0, 0.06);
-  
-    --container-max: 1100px;
-    --section-padding-y: 96px;
-  }
-  
+  --bg: #f9fafb;              /* 整体背景改得更清爽一点 */
+  --bg-soft: #f3f4f6;
+  --bg-card: #ffffff;
+  --border-subtle: #e5e7eb;
+  --text: #111827;
+  --text-muted: #6b7280;
+
+  /* 这里是重点：主色改成浅蓝 */
+  --accent: #3b82f6;          /* 蓝色主色 */
+  --accent-soft: rgba(59, 130, 246, 0.12);
+  --accent-lifestyle: #dbeafe; /* lifestyle 区域的柔和浅蓝 */
+
+  --radius-lg: 20px;
+  --radius-pill: 999px;
+
+  --shadow-soft: 0 12px 32px rgba(15, 23, 42, 0.08);
+
+  --container-max: 1100px;
+  --section-padding-y: 96px;
+}
+
   /* Reset-ish */
   *,
   *::before,
@@ -92,10 +94,16 @@
   }
   
   .logo-mark {
-    width: 20px;
-    height: 20px;
-    border-radius: 8px;
-    background: var(--accent);
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    background: radial-gradient(circle at 30% 30%, #eff6ff, var(--accent));
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #0b1120;
+    font-size: 0.85rem;
+    font-weight: 700;
   }
   
   .logo-text {
@@ -143,13 +151,59 @@
   .hero {
     padding-top: 140px;
     padding-bottom: 100px;
-  }
-  
-  .hero-inner {
+    min-height: calc(100vh - 72px); /* 72px 大概是 header 高度，可以微调 */
     display: flex;
+    align-items: center;            /* 让内容垂直居中一点 */
+  }
+  @media (max-width: 768px) {
+  .hero {
+    padding-top: 120px;
+    padding-bottom: 80px;
+    min-height: auto; /* 小屏就不强制一屏高也行 */
+  }
+}
+
+  .hero-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 3rem;
     align-items: center;
   }
-  
+.hero-content {
+  max-width: 640px;
+}
+
+/* 插画容器（右侧） */
+.hero-illustration {
+  display: flex;
+  justify-content: center;
+}
+
+/* 外圈背景（类似你发的例子里那种柔和色块）*/
+/* .hero-portrait {
+  width: 260px;
+  height: 260px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 30% 20%, #eff6ff, #bfdbfe);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+} */
+  /* .portrait-card {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+} */
+
+/* .hero-avatar {
+  width: 260px;
+  height: auto;
+  display: block;
+} */
+
   .hero-content {
     max-width: 640px;
   }
@@ -220,7 +274,7 @@
   
   /* About */
   .section-about {
-    background: radial-gradient(circle at top left, #f6f2ec, #fdfcf9 50%);
+    background: radial-gradient(circle at top left, #e5f0ff, #f9fafb 55%);
   }
   
   .two-column {
@@ -319,7 +373,7 @@
   
   /* Lifestyle */
   .section-lifestyle {
-    background: radial-gradient(circle at top right, #ffe6ee, #fdfcf9 55%);
+    background: radial-gradient(circle at top right, #dbeafe, #fdfcf9 55%);
   }
   
   .subsection {
@@ -362,17 +416,17 @@
   }
   
   .gallery-item.placeholder {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(
-      135deg,
-      rgba(168, 131, 255, 0.15),
-      rgba(255, 183, 195, 0.18)
-    );
-    color: var(--text-muted);
-    font-size: 0.9rem;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    135deg,
+    rgba(59, 130, 246, 0.18),
+    rgba(219, 234, 254, 0.9)
+  );
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
   
   /* Projects (即使现在注释掉，用到时也有样式) */
   .section-projects {
