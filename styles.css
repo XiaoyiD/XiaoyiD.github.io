@@ -203,9 +203,9 @@ img {
 }
 
 .eyebrow {
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  font-size: 0.75rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.15em;
+  font-size: 0.9rem;
   color: var(--accent);
   margin-bottom: 0.75rem;
 }
@@ -214,6 +214,7 @@ img {
   font-size: clamp(2.75rem, 5vw, 3.5rem);
   line-height: 1.1;
   margin: 0 0 1.25rem;
+  letter-spacing: 0.06em;
 }
 
 .hero-subtitle {
