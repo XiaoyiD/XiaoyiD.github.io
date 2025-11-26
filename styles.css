@@ -9,7 +9,7 @@
   --text-muted: #6b7280;
 
   /* 这里是重点：主色改成浅蓝 */
-  --accent: #3b82f6;
+  --accent: #6375ff;
   /* 蓝色主色 */
   --accent-soft: rgba(59, 130, 246, 0.12);
   --accent-lifestyle: #dbeafe;
@@ -248,12 +248,12 @@ img {
 .btn-primary {
   background: var(--accent);
   color: #fff;
-  box-shadow: 0 12px 30px rgba(59, 130, 246, 0.25);
+  box-shadow: 0 12px 30px rgba(74, 114, 255, 0.25);
 }
 
 .btn-primary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 16px 36px rgba(59, 130, 246, 0.5);
+  box-shadow: 0 16px 36px rgba(74, 114, 255, 0.36);
 }
 
 .btn-secondary {
