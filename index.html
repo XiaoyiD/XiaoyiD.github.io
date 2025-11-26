@@ -1,184 +1,189 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <title>xiaoyidu | Personal Site</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Personal site of xiaoyidu – writing, lifestyle, comedy and more."
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <!-- 可选：Google Fonts，引不引都行，没网也会 fallback -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    />
-  </head>
-  <body>
-    <!-- Site Header -->
-    <header class="site-header">
-      <div class="container header-inner">
-        <a href="#home" class="logo">
-            <span class="logo-mark" aria-hidden="true"></span>
-            <span class="logo-text">xiaoy1du</span>
-        </a>          
-        <nav class="nav">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#blog">Blog</a>
-          <a href="#lifestyle">Lifestyle</a>
-          <!-- 预留 Projects 导航，暂时注释
+
+<head>
+  <meta charset="UTF-8" />
+  <title>xiaoyidu | Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal site of xiaoyidu – writing, lifestyle, comedy and more." />
+  <link rel="stylesheet" href="styles.css" />
+  <!-- 可选：Google Fonts，引不引都行，没网也会 fallback -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+</head>
+
+<body>
+  <!-- Site Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="logo-text">xiaoy1du</span>
+      </a>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#blog">Blog</a>
+        <a href="#lifestyle">Lifestyle</a>
+        <!-- 预留 Projects 导航，暂时注释
           <a href="#projects">Projects</a>
           -->
-          <a href="#contact">Contact</a>
-        </nav>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+  <section id="home" class="section hero">
+    <div class="container hero-inner">
+      <!-- 左侧文字 -->
+      <div class="hero-content">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>xiaoy1du.</h1>
+        <p class="hero-subtitle">
+          I write, create, explore, and share little pieces of life,
+          thoughts, and sometimes questionable jokes.
+        </p>
+        <div class="hero-actions">
+          <a href="#blog" class="btn btn-primary">Read the Blog</a>
+          <a href="#about" class="btn btn-secondary">About Me</a>
+        </div>
       </div>
-    </header>
 
-    <main>
-      <!-- Hero / Home -->
-      <section id="home" class="section hero">
-        <div class="container hero-inner">
-          <div class="hero-content">
-            <p class="eyebrow">Hi, I'm</p>
-            <h1>Xiaoyi Du</h1>
-            <p class="hero-subtitle">
-              I write, create, explore, and share little pieces of life,
-              thoughts, and sometimes questionable jokes.
-            </p>
-            <div class="hero-actions">
-              <a href="#blog" class="btn btn-primary">Read the Blog</a>
-              <a href="#about" class="btn btn-secondary">About Me</a>
-            </div>
+      <!-- 右侧插画位 -->
+      <div class="hero-illustration">
+        <div class="portrait-card">
+          <img src="images/portrait.png" alt="portrait" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+    <!-- About -->
+    <section id="about" class="section section-about">
+      <div class="container two-column">
+        <div class="about-photo">
+          <div class="avatar-placeholder">
+            <span>xiaoyidu</span>
           </div>
         </div>
-      </section>
-
-      <!-- About -->
-      <section id="about" class="section section-about">
-        <div class="container two-column">
-          <div class="about-photo">
-            <div class="avatar-placeholder">
-              <span>xiaoyidu</span>
-            </div>
-          </div>
-          <div class="about-card">
-            <h2>About Me</h2>
-            <p>
-              This is a short introduction about who I am, what I'm curious
-              about, and how I spend my days balancing work, ideas, and
-              low-key chaos.
-            </p>
-            <p>
-              I enjoy exploring AI, agents, writing, and standup topics. This
-              site is a place to collect experiments, notes, and things that
-              make me laugh enough to write them down.
-            </p>
-            <p>
-              Right now I'm also working on agent projects for job hunting, so
-              this space will slowly turn into both a life log and a soft
-              portfolio.
-            </p>
-          </div>
+        <div class="about-card">
+          <h2>About Me</h2>
+          <p>
+            This is a short introduction about who I am, what I'm curious
+            about, and how I spend my days balancing work, ideas, and
+            low-key chaos.
+          </p>
+          <p>
+            I enjoy exploring AI, agents, writing, and standup topics. This
+            site is a place to collect experiments, notes, and things that
+            make me laugh enough to write them down.
+          </p>
+          <p>
+            Right now I'm also working on agent projects for job hunting, so
+            this space will slowly turn into both a life log and a soft
+            portfolio.
+          </p>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Blog -->
-      <section id="blog" class="section section-blog">
-        <div class="container">
-          <div class="section-header">
-            <h2>Blog</h2>
-            <p class="section-description">
-              Occasional long-form thoughts, small essays, or notes that
-              deserve more than a tweet.
+    <!-- Blog -->
+    <section id="blog" class="section section-blog">
+      <div class="container">
+        <div class="section-header">
+          <h2>Blog</h2>
+          <p class="section-description">
+            Occasional long-form thoughts, small essays, or notes that
+            deserve more than a tweet.
+          </p>
+        </div>
+        <div class="blog-list">
+          <article class="card blog-card">
+            <h3 class="card-title">[Placeholder] First post title</h3>
+            <p class="card-meta">2025 · Draft</p>
+            <p class="card-body">
+              This is where a short summary of the post goes. You can write
+              about learning, work, life, or anything that feels meaningful.
+            </p>
+            <a href="#" class="card-link">Read &rarr;</a>
+          </article>
+          <article class="card blog-card">
+            <h3 class="card-title">[Placeholder] Another future piece</h3>
+            <p class="card-meta">2025 · Idea</p>
+            <p class="card-body">
+              You don't have to fill this right now. Having the layout here
+              just reminds you that the space is ready when you are.
+            </p>
+            <a href="#" class="card-link">Read &rarr;</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lifestyle (Comedy + Gallery) -->
+    <section id="lifestyle" class="section section-lifestyle">
+      <div class="container">
+        <div class="section-header">
+          <h2>Lifestyle</h2>
+          <p class="section-description">
+            A softer corner: small jokes, random observations, and snapshots.
+          </p>
+        </div>
+
+        <!-- Comedy sub-section -->
+        <div class="subsection">
+          <div class="subsection-header">
+            <h3>Comedy / Notes</h3>
+            <p class="subsection-description">
+              Tiny thoughts that made it past the internal editor.
             </p>
           </div>
-          <div class="blog-list">
-            <article class="card blog-card">
-              <h3 class="card-title">[Placeholder] First post title</h3>
-              <p class="card-meta">2025 · Draft</p>
+          <div class="comedy-list">
+            <article class="card comedy-card">
               <p class="card-body">
-                This is where a short summary of the post goes. You can write
-                about learning, work, life, or anything that feels meaningful.
+                Sometimes “I'll do it later” actually means “future me can
+                deal with this chaos.” Future me is filing a complaint.
               </p>
-              <a href="#" class="card-link">Read &rarr;</a>
+              <p class="card-meta">Placeholder · keep or replace anytime</p>
             </article>
-            <article class="card blog-card">
-              <h3 class="card-title">[Placeholder] Another future piece</h3>
-              <p class="card-meta">2025 · Idea</p>
+            <article class="card comedy-card">
               <p class="card-body">
-                You don't have to fill this right now. Having the layout here
-                just reminds you that the space is ready when you are.
+                Productivity tip: open your laptop. Stare at it. Close it.
+                Realize the problem was never the laptop.
               </p>
-              <a href="#" class="card-link">Read &rarr;</a>
+              <p class="card-meta">Draft joke · feel free to delete</p>
             </article>
           </div>
         </div>
-      </section>
 
-      <!-- Lifestyle (Comedy + Gallery) -->
-      <section id="lifestyle" class="section section-lifestyle">
-        <div class="container">
-          <div class="section-header">
-            <h2>Lifestyle</h2>
-            <p class="section-description">
-              A softer corner: small jokes, random observations, and snapshots.
+        <!-- Gallery sub-section -->
+        <div class="subsection">
+          <div class="subsection-header">
+            <h3>Gallery</h3>
+            <p class="subsection-description">
+              Space for photos, screenshots, or anything visual you want to
+              remember.
             </p>
           </div>
-
-          <!-- Comedy sub-section -->
-          <div class="subsection">
-            <div class="subsection-header">
-              <h3>Comedy / Notes</h3>
-              <p class="subsection-description">
-                Tiny thoughts that made it past the internal editor.
-              </p>
+          <div class="gallery-grid">
+            <div class="gallery-item placeholder">
+              <span>Image placeholder</span>
             </div>
-            <div class="comedy-list">
-              <article class="card comedy-card">
-                <p class="card-body">
-                  Sometimes “I'll do it later” actually means “future me can
-                  deal with this chaos.” Future me is filing a complaint.
-                </p>
-                <p class="card-meta">Placeholder · keep or replace anytime</p>
-              </article>
-              <article class="card comedy-card">
-                <p class="card-body">
-                  Productivity tip: open your laptop. Stare at it. Close it.
-                  Realize the problem was never the laptop.
-                </p>
-                <p class="card-meta">Draft joke · feel free to delete</p>
-              </article>
+            <div class="gallery-item placeholder">
+              <span>Image placeholder</span>
             </div>
-          </div>
-
-          <!-- Gallery sub-section -->
-          <div class="subsection">
-            <div class="subsection-header">
-              <h3>Gallery</h3>
-              <p class="subsection-description">
-                Space for photos, screenshots, or anything visual you want to
-                remember.
-              </p>
-            </div>
-            <div class="gallery-grid">
-              <div class="gallery-item placeholder">
-                <span>Image placeholder</span>
-              </div>
-              <div class="gallery-item placeholder">
-                <span>Image placeholder</span>
-              </div>
-              <div class="gallery-item placeholder">
-                <span>Image placeholder</span>
-              </div>
+            <div class="gallery-item placeholder">
+              <span>Image placeholder</span>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- Projects (预留，整体注释掉，后面有内容再解开) -->
-      <!--
+    <!-- Projects (预留，整体注释掉，后面有内容再解开) -->
+    <!--
       <section id="projects" class="section section-projects">
         <div class="container">
           <div class="section-header">
@@ -209,52 +214,51 @@
       </section>
       -->
 
-      <!-- Contact -->
-      <section id="contact" class="section section-contact">
-        <div class="container">
-          <div class="section-header">
-            <h2>Contact</h2>
-            <p class="section-description">
-              If you ever want to say hi, collaborate, or send memes:
-            </p>
-          </div>
-          <div class="contact-content">
-            <ul class="contact-list">
-              <li>
-                Email:
-                <a href="mailto:you@example.com">you@example.com</a>
-              </li>
-              <li>
-                GitHub:
-                <a href="https://github.com/xiaoyid" target="_blank"
-                  >@xiaoyid</a
-                >
-              </li>
-              <!-- 如果你有 Instagram / LinkedIn 可以加在这里 -->
-              <!--
+    <!-- Contact -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="section-header">
+          <h2>Contact</h2>
+          <p class="section-description">
+            If you ever want to say hi, collaborate, or send memes:
+          </p>
+        </div>
+        <div class="contact-content">
+          <ul class="contact-list">
+            <li>
+              Email:
+              <a href="mailto:you@example.com">you@example.com</a>
+            </li>
+            <li>
+              GitHub:
+              <a href="https://github.com/xiaoyid" target="_blank">@xiaoyid</a>
+            </li>
+            <!-- 如果你有 Instagram / LinkedIn 可以加在这里 -->
+            <!--
               <li>
                 Instagram:
                 <a href="#" target="_blank">@your_ig</a>
               </li>
               -->
-            </ul>
-          </div>
+          </ul>
         </div>
-      </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <span class="footer-logo">xiaoyidu</span>
-        <span class="footer-meta">
-          © <span id="year"></span> xiaoyidu. All rights reserved.
-        </span>
       </div>
-      <script>
-        document.getElementById("year").textContent =
-          new Date().getFullYear();
-      </script>
-    </footer>
-  </body>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span class="footer-logo">xiaoyidu</span>
+      <span class="footer-meta">
+        © <span id="year"></span> xiaoyidu. All rights reserved.
+      </span>
+    </div>
+    <script>
+      document.getElementById("year").textContent =
+        new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+
 </html>
